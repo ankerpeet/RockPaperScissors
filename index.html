@@ -1,16 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<title>SET THE TITLE!!!</title>
+	<title>Rock Paper Scissors</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="styles/style.css">
+
 	<!--Might be good to link bootstrap here-->
 </head>
+
 <body>
 	<!--write html below this line-->
-	
-	
+	<div class="container">
+		<div class="main-div">
+			<div class="button-div">
+				<p>Click a button to begin.</p>
+				<button class="btn" onclick="play('rock')">Rock</button>
+				<button class="btn" onclick="play('paper')">Paper</button>
+				<button class="btn" onclick="play('scissors')">Scissors</button>
+			</div>
+			<div id="game">
+			</div>
+			<div class="output">
+				<div class="row">
+					<div class="col-xs-6">
+						<img id="img1" class="img-responsive image" src="images/rock.png" alt="rock paper scissors">
+					</div>
+					<div class="col-xs-6">
+						<img id="img2" class="img-responsive image" src="images/rock-left.png" alt="rock paper scissors">
+					</div>
+				</div>
+			</div>
+			<div class="row score">
+				<div class="col-xs-6">
+					<h3>You: <span id="you">0</span></h3>	
+				</div>
+				<div class="col-xs-6">
+					<h3>Comp: <span id="comp">0</span></h3>	
+				</div>
+			</div>
+		</div>
+	</div>
 	<!--write html above this line-->
 	<!--the following line is used to link your javascript file.-->
 	<script src="app.js"></script>
 </body>
+
 </html>
